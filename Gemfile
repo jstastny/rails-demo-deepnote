@@ -11,6 +11,9 @@ gem 'sqlite3', '~> 1.4'
 # Postgres driver
 gem 'pg', '~> 1.2.3'
 
+gem 'vega'
+gem 'rover-df'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
