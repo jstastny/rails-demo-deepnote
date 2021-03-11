@@ -1,5 +1,5 @@
-FROM ruby:2.6.3 AS base
-RUN apt-get update -qq && apt-get install -y nodejs
+FROM ruby:3.0 AS base
+RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 #RUN gem install bundler
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
