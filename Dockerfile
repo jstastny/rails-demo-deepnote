@@ -23,3 +23,4 @@ RUN gem install ffi-rzmq
 RUN gem install iruby --pre
 RUN ln -s $(which python3) /usr/local/bin/python
 RUN ln -s $(which pip3) /usr/local/bin/pip
+ENV DEFAULT_KERNEL_NAME=ruby
