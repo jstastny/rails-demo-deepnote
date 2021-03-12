@@ -17,7 +17,7 @@ CMD ["rails", "server", "-b", "0.0.0.0"]
 
 
 FROM base
-RUN apt-get update -qq && apt-get install -y python3 python3-pip
+RUN apt-get update -qq && apt-get install -y python3 python3-pip python3-venv
 RUN apt-get update -qq && apt-get install -y libtool libffi-dev make libzmq3-dev libczmq-dev
 RUN gem install ffi-rzmq
 RUN gem install iruby --pre
